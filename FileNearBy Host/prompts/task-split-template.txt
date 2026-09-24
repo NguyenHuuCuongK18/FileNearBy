@@ -1,0 +1,12 @@
+ID / title:
+Parent task:
+Depends on:
+Required owner decisions:
+Read these files:
+Allowed work area:
+One behavior to implement:
+Out of scope for this card:
+Input fixture / reproduction:
+Pass gate and expected observable result:
+Evidence to save:
+Stop / split trigger:

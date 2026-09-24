@@ -1,0 +1,6 @@
+Read INITIALIZE.md and AGENTS.md in this repository.
+Execute only P000: prepare documentation and empty directory placeholders.
+Do not generate application code, project templates, build files, or dependencies.
+Inspect and preserve existing files. Save CURRENT before editing and after checks.
+Verify the layout and document actual results in the initialization report.
+Stop after P000; do not begin P001 or create the Windows/Android applications.

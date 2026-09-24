@@ -1,0 +1,1117 @@
+[
+  {
+    "id": "P000",
+    "title": "Documentation-only initialization",
+    "depends_on": [],
+    "status": "PASS",
+    "owner": "Leon (NguyenHuuCuongK18)",
+    "file": "docs/tasks/P000.md"
+  },
+  {
+    "id": "P001",
+    "title": "Freeze the implementation brief",
+    "depends_on": [],
+    "status": "PASS",
+    "owner": "Leon (NguyenHuuCuongK18)",
+    "file": "docs/tasks/P001.md"
+  },
+  {
+    "id": "P002",
+    "title": "Create restartable session state",
+    "depends_on": [
+      "P001"
+    ],
+    "status": "PASS",
+    "owner": "Leon (NguyenHuuCuongK18)",
+    "file": "docs/tasks/P002.md"
+  },
+  {
+    "id": "P003",
+    "title": "Build the Windows shell",
+    "depends_on": [
+      "P002"
+    ],
+    "status": "PASS",
+    "owner": "Leon (NguyenHuuCuongK18)",
+    "file": "docs/tasks/P003.md"
+  },
+  {
+    "id": "P004",
+    "title": "Build the Android shell",
+    "depends_on": [
+      "P002"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P004.md"
+  },
+  {
+    "id": "P005",
+    "title": "Define the minimum shared protocol",
+    "depends_on": [
+      "P003",
+      "P004"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P005.md"
+  },
+  {
+    "id": "P006",
+    "title": "Implement task verification dispatch",
+    "depends_on": [
+      "P003",
+      "P004",
+      "P005"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P006.md"
+  },
+  {
+    "id": "P007",
+    "title": "Inventory the actual wireless hardware",
+    "depends_on": [
+      "P003",
+      "P006"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P007.md"
+  },
+  {
+    "id": "P008",
+    "title": "Start and stop one test access point",
+    "depends_on": [
+      "P007"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P008.md"
+  },
+  {
+    "id": "P009",
+    "title": "Prove operation with no upstream network",
+    "depends_on": [
+      "P008"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P009.md"
+  },
+  {
+    "id": "P010",
+    "title": "Resolve the host endpoint dynamically",
+    "depends_on": [
+      "P008",
+      "P005"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P010.md"
+  },
+  {
+    "id": "P011",
+    "title": "Join the hotspot from Android",
+    "depends_on": [
+      "P004",
+      "P009",
+      "P010"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P011.md"
+  },
+  {
+    "id": "P012",
+    "title": "Bind one local client to that network",
+    "depends_on": [
+      "P011"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P012.md"
+  },
+  {
+    "id": "P013",
+    "title": "Separate internet and local clients",
+    "depends_on": [
+      "P012"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P013.md"
+  },
+  {
+    "id": "P014",
+    "title": "Handle one hotspot interruption at a time",
+    "depends_on": [
+      "P010",
+      "P012"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P014.md"
+  },
+  {
+    "id": "P015",
+    "title": "Persist the host identity securely",
+    "depends_on": [
+      "P003",
+      "P006"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P015.md"
+  },
+  {
+    "id": "P016",
+    "title": "Generate the phone's device key",
+    "depends_on": [
+      "P004",
+      "P006"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P016.md"
+  },
+  {
+    "id": "P017",
+    "title": "Serve a TLS sentinel with host identity",
+    "depends_on": [
+      "P015",
+      "P010"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P017.md"
+  },
+  {
+    "id": "P018",
+    "title": "Verify the host pin on Android",
+    "depends_on": [
+      "P017",
+      "P012"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P018.md"
+  },
+  {
+    "id": "P019",
+    "title": "Create and validate a device CSR",
+    "depends_on": [
+      "P015",
+      "P016"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P019.md"
+  },
+  {
+    "id": "P020",
+    "title": "Require a registered client certificate",
+    "depends_on": [
+      "P018",
+      "P019"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P020.md"
+  },
+  {
+    "id": "P021",
+    "title": "Limit the enrollment window",
+    "depends_on": [
+      "P017",
+      "P019"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P021.md"
+  },
+  {
+    "id": "P022",
+    "title": "Render the pairing QR locally",
+    "depends_on": [
+      "P021",
+      "P003"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P022.md"
+  },
+  {
+    "id": "P023",
+    "title": "Scan and verify bootstrap identity",
+    "depends_on": [
+      "P022",
+      "P011",
+      "P018"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P023.md"
+  },
+  {
+    "id": "P024",
+    "title": "Approve and commit one enrollment",
+    "depends_on": [
+      "P023",
+      "P019",
+      "P020"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P024.md"
+  },
+  {
+    "id": "P025",
+    "title": "Revoke a device and its connections",
+    "depends_on": [
+      "P024"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P025.md"
+  },
+  {
+    "id": "P026",
+    "title": "Handle changed or expired host trust",
+    "depends_on": [
+      "P024"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P026.md"
+  },
+  {
+    "id": "P027",
+    "title": "Renew a certificate through trusted access",
+    "depends_on": [
+      "P024",
+      "P026"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P027.md"
+  },
+  {
+    "id": "P028",
+    "title": "Implement the pure grant evaluator",
+    "depends_on": [
+      "P005",
+      "P006"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P028.md"
+  },
+  {
+    "id": "P029",
+    "title": "Register one selected root by identity",
+    "depends_on": [
+      "P028",
+      "P003"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P029.md"
+  },
+  {
+    "id": "P030",
+    "title": "Validate single-component names",
+    "depends_on": [
+      "P005",
+      "P006"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P030.md"
+  },
+  {
+    "id": "P031",
+    "title": "Open a read-only child by verified handles",
+    "depends_on": [
+      "P029",
+      "P030"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P031.md"
+  },
+  {
+    "id": "P032",
+    "title": "Reject reparse traversal",
+    "depends_on": [
+      "P031"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P032.md"
+  },
+  {
+    "id": "P033",
+    "title": "Probe replacement races and hard links",
+    "depends_on": [
+      "P031",
+      "P032"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P033.md"
+  },
+  {
+    "id": "P034",
+    "title": "Version an opened file consistently",
+    "depends_on": [
+      "P031"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P034.md"
+  },
+  {
+    "id": "P035",
+    "title": "Expose authorized root metadata",
+    "depends_on": [
+      "P020",
+      "P028",
+      "P029"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P035.md"
+  },
+  {
+    "id": "P036",
+    "title": "Paginate one authorized directory",
+    "depends_on": [
+      "P035",
+      "P031",
+      "P032",
+      "P034"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P036.md"
+  },
+  {
+    "id": "P037",
+    "title": "Browse that directory on Android",
+    "depends_on": [
+      "P036",
+      "P024"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P037.md"
+  },
+  {
+    "id": "P038",
+    "title": "Edit grants from the desktop",
+    "depends_on": [
+      "P028",
+      "P029",
+      "P035",
+      "P003"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P038.md"
+  },
+  {
+    "id": "P039",
+    "title": "Journal one idempotent operation",
+    "depends_on": [
+      "P005",
+      "P028",
+      "P006"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P039.md"
+  },
+  {
+    "id": "P040",
+    "title": "Create one folder safely",
+    "depends_on": [
+      "P033",
+      "P038",
+      "P039"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P040.md"
+  },
+  {
+    "id": "P041",
+    "title": "Rename one file safely",
+    "depends_on": [
+      "P033",
+      "P034",
+      "P039"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P041.md"
+  },
+  {
+    "id": "P042",
+    "title": "Move one file on the same volume",
+    "depends_on": [
+      "P041",
+      "P028"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P042.md"
+  },
+  {
+    "id": "P043",
+    "title": "Copy one file through staging",
+    "depends_on": [
+      "P033",
+      "P034",
+      "P039"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P043.md"
+  },
+  {
+    "id": "P044",
+    "title": "Move across two volumes",
+    "depends_on": [
+      "P042",
+      "P043"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P044.md"
+  },
+  {
+    "id": "P045",
+    "title": "Delete into recovery storage",
+    "depends_on": [
+      "P033",
+      "P039",
+      "P001"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P045.md"
+  },
+  {
+    "id": "P046",
+    "title": "Restore and purge from the host UI",
+    "depends_on": [
+      "P045"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P046.md"
+  },
+  {
+    "id": "P047",
+    "title": "Handle mutation conflicts on the phone",
+    "depends_on": [
+      "P040",
+      "P041",
+      "P043",
+      "P045",
+      "P037"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P047.md"
+  },
+  {
+    "id": "P048",
+    "title": "Stop pending work after policy removal",
+    "depends_on": [
+      "P025",
+      "P038",
+      "P039",
+      "P043"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P048.md"
+  },
+  {
+    "id": "P049",
+    "title": "Create an upload staging session",
+    "depends_on": [
+      "P033",
+      "P039",
+      "P038"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P049.md"
+  },
+  {
+    "id": "P050",
+    "title": "Accept one idempotent upload chunk",
+    "depends_on": [
+      "P049"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P050.md"
+  },
+  {
+    "id": "P051",
+    "title": "Verify and publish an upload",
+    "depends_on": [
+      "P050",
+      "P034"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P051.md"
+  },
+  {
+    "id": "P052",
+    "title": "Resume upload after a host restart",
+    "depends_on": [
+      "P050",
+      "P051",
+      "P039"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P052.md"
+  },
+  {
+    "id": "P053",
+    "title": "Serve a versioned download range",
+    "depends_on": [
+      "P034",
+      "P035",
+      "P031"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P053.md"
+  },
+  {
+    "id": "P054",
+    "title": "Select one phone upload source",
+    "depends_on": [
+      "P004"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P054.md"
+  },
+  {
+    "id": "P055",
+    "title": "Upload the selected phone file",
+    "depends_on": [
+      "P054",
+      "P049",
+      "P050",
+      "P051",
+      "P012"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P055.md"
+  },
+  {
+    "id": "P056",
+    "title": "Select a phone download destination",
+    "depends_on": [
+      "P004"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P056.md"
+  },
+  {
+    "id": "P057",
+    "title": "Download and verify one file",
+    "depends_on": [
+      "P053",
+      "P056",
+      "P012"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P057.md"
+  },
+  {
+    "id": "P058",
+    "title": "Resume an Android transfer",
+    "depends_on": [
+      "P052",
+      "P055",
+      "P057"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P058.md"
+  },
+  {
+    "id": "P059",
+    "title": "Continue or pause background transfer",
+    "depends_on": [
+      "P058"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P059.md"
+  },
+  {
+    "id": "P060",
+    "title": "Clean canceled and expired stages",
+    "depends_on": [
+      "P052",
+      "P058",
+      "P046"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P060.md"
+  },
+  {
+    "id": "P061",
+    "title": "Decode a bounded preview in a worker",
+    "depends_on": [
+      "P031",
+      "P034"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P061.md"
+  },
+  {
+    "id": "P062",
+    "title": "Restrict the media worker process",
+    "depends_on": [
+      "P061"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P062.md"
+  },
+  {
+    "id": "P063",
+    "title": "Serve an authenticated thumbnail",
+    "depends_on": [
+      "P061",
+      "P062",
+      "P035"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P063.md"
+  },
+  {
+    "id": "P064",
+    "title": "Render a virtualized gallery grid",
+    "depends_on": [
+      "P063",
+      "P037"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P064.md"
+  },
+  {
+    "id": "P065",
+    "title": "Implement image viewport transforms",
+    "depends_on": [
+      "P064"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P065.md"
+  },
+  {
+    "id": "P066",
+    "title": "Produce a versioned tile region",
+    "depends_on": [
+      "P061",
+      "P062"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P066.md"
+  },
+  {
+    "id": "P067",
+    "title": "Render tiles in the viewer",
+    "depends_on": [
+      "P066",
+      "P065",
+      "P063"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P067.md"
+  },
+  {
+    "id": "P068",
+    "title": "Add formats one fixture at a time",
+    "depends_on": [
+      "P061",
+      "P065"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P068.md"
+  },
+  {
+    "id": "P069",
+    "title": "Enforce one shared preview budget",
+    "depends_on": [
+      "P064",
+      "P065",
+      "P067"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P069.md"
+  },
+  {
+    "id": "P070",
+    "title": "Clear caches without late repopulation",
+    "depends_on": [
+      "P069",
+      "P025",
+      "P038"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P070.md"
+  },
+  {
+    "id": "P071",
+    "title": "Verify preview storage and process death",
+    "depends_on": [
+      "P070",
+      "P060"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P071.md"
+  },
+  {
+    "id": "P072",
+    "title": "Define a fake translation adapter",
+    "depends_on": [
+      "P005",
+      "P004"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P072.md"
+  },
+  {
+    "id": "P073",
+    "title": "Recognize one bundled OCR script",
+    "depends_on": [
+      "P065",
+      "P072"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P073.md"
+  },
+  {
+    "id": "P074",
+    "title": "Evaluate unknown or mixed scripts",
+    "depends_on": [
+      "P073",
+      "P001"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P074.md"
+  },
+  {
+    "id": "P075",
+    "title": "Anchor synthetic text overlays",
+    "depends_on": [
+      "P065",
+      "P073"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P075.md"
+  },
+  {
+    "id": "P076",
+    "title": "Fit translated strings accessibly",
+    "depends_on": [
+      "P075",
+      "P072"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P076.md"
+  },
+  {
+    "id": "P077",
+    "title": "Prove one local translation without billing",
+    "depends_on": [
+      "P001",
+      "P072"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P077.md"
+  },
+  {
+    "id": "P078",
+    "title": "Manage downloaded language models",
+    "depends_on": [
+      "P077"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P078.md"
+  },
+  {
+    "id": "P079",
+    "title": "Identify and choose translation languages",
+    "depends_on": [
+      "P078",
+      "P073"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P079.md"
+  },
+  {
+    "id": "P080",
+    "title": "Measure local quality and footprint",
+    "depends_on": [
+      "P079",
+      "P074"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P080.md"
+  },
+  {
+    "id": "P081",
+    "title": "Verify manual Google image translation",
+    "depends_on": [
+      "P001",
+      "P055"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P081.md"
+  },
+  {
+    "id": "P082",
+    "title": "Integrate the passing translation route",
+    "depends_on": [
+      "P076",
+      "P080",
+      "P081"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P082.md"
+  },
+  {
+    "id": "P083",
+    "title": "Clear translation content and release models",
+    "depends_on": [
+      "P082",
+      "P070"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P083.md"
+  },
+  {
+    "id": "P084",
+    "title": "Polish desktop controls consistently",
+    "depends_on": [
+      "P038",
+      "P047",
+      "P046"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P084.md"
+  },
+  {
+    "id": "P085",
+    "title": "Finish phone connection and permissions UX",
+    "depends_on": [
+      "P024",
+      "P026",
+      "P037",
+      "P059"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P085.md"
+  },
+  {
+    "id": "P086",
+    "title": "Present transfer and conflict state",
+    "depends_on": [
+      "P047",
+      "P055",
+      "P057",
+      "P058"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P086.md"
+  },
+  {
+    "id": "P087",
+    "title": "Constrain the production listener/firewall",
+    "depends_on": [
+      "P020",
+      "P010",
+      "P025"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P087.md"
+  },
+  {
+    "id": "P088",
+    "title": "Build and test an offline Windows package",
+    "depends_on": [
+      "P003",
+      "P087",
+      "P007"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P088.md"
+  },
+  {
+    "id": "P089",
+    "title": "Build a signed Android release package",
+    "depends_on": [
+      "P004",
+      "P073",
+      "P085"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P089.md"
+  },
+  {
+    "id": "P090",
+    "title": "Exercise one upgrade/reset path",
+    "depends_on": [
+      "P039",
+      "P052",
+      "P058",
+      "P088",
+      "P089"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P090.md"
+  },
+  {
+    "id": "P091",
+    "title": "Run hostile network-client acceptance",
+    "depends_on": [
+      "P024",
+      "P025",
+      "P027",
+      "P035",
+      "P048",
+      "P087"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P091.md"
+  },
+  {
+    "id": "P092",
+    "title": "Run filesystem containment acceptance",
+    "depends_on": [
+      "P033",
+      "P040",
+      "P041",
+      "P042",
+      "P043",
+      "P044",
+      "P045",
+      "P051",
+      "P063"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P092.md"
+  },
+  {
+    "id": "P093",
+    "title": "Run the offline user journey",
+    "depends_on": [
+      "P009",
+      "P014",
+      "P037",
+      "P047",
+      "P059",
+      "P067",
+      "P088",
+      "P089"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P093.md"
+  },
+  {
+    "id": "P094",
+    "title": "Audit cache and privacy retention",
+    "depends_on": [
+      "P071",
+      "P083",
+      "P089",
+      "P090"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P094.md"
+  },
+  {
+    "id": "P095",
+    "title": "Accept the no-billing translation scope",
+    "depends_on": [
+      "P074",
+      "P080",
+      "P081",
+      "P082",
+      "P083"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P095.md"
+  },
+  {
+    "id": "P096",
+    "title": "Assemble the release and next-work packet",
+    "depends_on": [
+      "P084",
+      "P085",
+      "P086",
+      "P090",
+      "P091",
+      "P092",
+      "P093",
+      "P094",
+      "P095"
+    ],
+    "status": "NOT_STARTED",
+    "owner": null,
+    "file": "docs/tasks/P096.md"
+  }
+]

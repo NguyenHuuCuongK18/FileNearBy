@@ -1,0 +1,17 @@
+Work only on task <Pxxx> in this repository.
+Read PROJECT_BRIEF, CURRENT, the task card, applicable DECISIONS,
+and the smallest relevant contract/code files.
+First inspect Git status and verify the recorded starting commit.
+Resolve project credit from the current user/Git identity per AGENTS.md; never default to the assistant.
+Use docs/SESSION_WORKFLOW.md and docs/templates/ for checkpoint/card/evidence records.
+Do not overwrite unrelated work.
+Restate the one outcome and the exact pass gate in a short paragraph.
+If a required fact or approval is missing, mark that dependency blocked.
+Implement the smallest complete change for this card.
+Run the card's tests plus only directly affected regression checks.
+Write CURRENT before editing; update it after each edit/test/experiment.
+Persist research and evidence now, not only at the final response.
+Save a checkpoint even if tests fail.
+Do not implement the next card or broaden the task to fix unrelated issues.
+Finish with changed files, real test results, remaining issues,
+the current commit/worktree state, and the next exact action.

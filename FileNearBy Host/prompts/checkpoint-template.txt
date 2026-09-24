@@ -1,0 +1,20 @@
+Task: Pxxx / title
+Status: IN_PROGRESS | BLOCKED | PASS
+Owner:
+Project credit identity source (no private email/tokens):
+Branch:
+Last known-good commit:
+Current HEAD:
+Uncommitted changes / saved patch location:
+Environment: Windows build, adapter/driver, Android device, toolchain
+Goal and invariant:
+Changed files and why:
+Last exact test command:
+Observed result: exit code + concise failure/success summary
+Evidence path:
+What is unfinished:
+Known blockers and who must decide:
+Hypotheses already tried and rejected:
+Next single action:
+Rollback or recovery steps:
+Files to read next:

@@ -1,0 +1,19 @@
+# Build and IDE output
+**/bin/
+**/obj/
+.vs/
+.idea/
+**/.gradle/
+**/build/
+**/local.properties
+# Local credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.jks
+*.keystore
+# Local test/output captures; store redacted summaries under docs/evidence
+artifacts/
+local-private/

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+    <AssemblyName>FileNearBy.Host</AssemblyName>
+    <RootNamespace>FileNearBy.Host</RootNamespace>
+    <Product>File Near By</Product>
+    <Authors>Leon (NguyenHuuCuongK18)</Authors>
+    <Copyright>Copyright (c) 2026 Leon (NguyenHuuCuongK18)</Copyright>
+    <Description>Windows desktop shell for File Near By.</Description>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+</Project>

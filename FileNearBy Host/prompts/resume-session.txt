@@ -1,0 +1,9 @@
+Resume task <Pxxx> using repository state as the source of truth.
+The previous chatbot session stopped; do not assume it finished.
+Read CURRENT and the task card, then inspect Git status and diff.
+Identify the next action, invariant and starting state from these files alone.
+Resolve the current user's project credit using AGENTS.md; do not default to the assistant.
+Verify the last recorded result with the smallest relevant test.
+Continue from 'Next single action'.
+Do not regenerate the project, repeat completed setup,
+change the architecture, or mark unrun tests as passing.

@@ -1,0 +1,17 @@
+﻿# Current checkpoint
+
+Task / status: P002 PASS; P003 PASS (2026-09-24). Assigned work complete.
+Active follow-up: owner requested Android Studio/SDK setup, emulator only. IN_PROGRESS; see docs/ANDROID_ENVIRONMENT.md. Reuse SDK, install Studio/API 36 and one AVD, verify boot. Android implementation remains deferred. P003 is already complete.
+Project credit: Leon (NguyenHuuCuongK18), explicit owner identity; local Git author NGUYEN HUU CUONG. Authenticated remote login not independently checked. Future identity policy in AGENTS.md.
+Branch / HEAD: main / 0a5a62556f592eac96bbf3ad51e1c4957474593b; last known-good application commit: none. No stage/commit.
+Scope/invariant: Windows x64 Host only; Android deferred. Shell navigation only; no network service or real user-file access. G1/G4/G5 later-feature gates remain pending.
+Changed files: P002 workflow/templates/prompts/AGENTS, existing credits and LICENSE; P003 global.json, FileNearBy.slnx, src/FileNearBy.Host sources/styles/project; README/setup/layout/brief/decisions/integration and task-state records. Host/Android folders were already untracked; LICENSE now modified. Existing placeholders retained. Details in P002/P003 WORKLOG files.
+Environment: SDK 10.0.400 pinned, Windows x64 build 26200, WindowsDesktop runtime 10.0.12. No third-party packages installed.
+Last build: dotnet build FileNearBy.slnx -c Release --nologo --no-restore from host root; PASS / exit 0, zero warnings/errors. Fresh source-only staging build/rebuild with --source . also PASS; not a literal committed-checkout test.
+Verification: P002 recovery rehearsal PASS. P003 final binary rechecked at owner's request: launch, visible Overview/Settings, mouse navigation, Home keyboard navigation, concise accessibility names and Leon credit PASS. Normal title-bar close removed the window; Get-Process confirmed no FileNearBy.Host process remained (exit 0). Prior TCP/UDP endpoint check PASS (zero); source review found no network/user-file APIs. Full application/hardware/security/integration tests NOT_RUN.
+Failures/limits: initial SDK-cache/network-diagnostic sandbox denials resolved by approved reruns; one rebuild failed because test exe remained open, final retry passed. .NET first-run setup reported its standard dev HTTPS certificate; no trust command or server uses it. Prior Computer Use interruption retained in evidence; owner explicitly requested redo and final close verification now PASS. Test window/process exited. Full accessibility/high-DPI acceptance remains NOT_RUN.
+Unfinished work: none for P002/P003 required gates. P004 deferred; P005/P006 still require Android under original graph and need an explicit host-only split. No later task started.
+Final structural check: exact PowerShell command in P003 WORKLOG, PASS / exit 0. 97 task records consistent; 27 local links valid; all 141 original host files retained; 19 intended existing files edited; authored source has no network/user-file APIs or external package references. UTF-8/whitespace checks passed.
+Next single action: reconcile/split P005/P006 for host-only contract/verification work before implementation.
+Resume files: AGENTS.md; docs/TASKS.md; docs/DECISIONS.md; docs/tasks/P005.md; docs/tasks/P006.md; docs/WINDOWS_SETUP.md; docs/evidence/P003/WORKLOG.md.
+Recovery: preserve untracked work; do not regenerate/reset/clean. Prior hashes: $env:TEMP/FileNearBy-P002-P003-baseline.json. Build outputs and isolated staging are under ignored bin/obj/artifacts.
